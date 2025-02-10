@@ -2,15 +2,14 @@
 
 ## Prerequisites
 
-- Docker
 - Docker Compose
 
 ## Installation
 
 1. Clone the repository to your local machine:
     ```sh
-    git clone <repository-url>
-    cd <repository-directory>
+    git clone https://github.com/sodtiruk/knowledge_sharing.git
+    cd knowledge_sharing
     ```
 
 2. Ensure Docker and Docker Compose are installed on your machine.
@@ -19,7 +18,7 @@
 
 1. Navigate to the project directory:
     ```sh
-    cd <repository-directory>
+    cd knowledge_sharing
     ```
 
 2. Start the services using Docker Compose:
