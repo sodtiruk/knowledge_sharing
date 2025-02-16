@@ -1,4 +1,3 @@
-
 version: '3.8'
 services:
   mysql:
@@ -6,7 +5,7 @@ services:
     container_name: my-mysql
     environment:
       MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: workshop 
+      MYSQL_DATABASE: pokemon 
     ports:
       - "3306:3306"
     volumes:

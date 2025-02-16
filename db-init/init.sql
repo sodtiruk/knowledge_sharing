@@ -1,29 +1,20 @@
-CREATE TABLE IF NOT EXISTS users (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    username VARCHAR(255) NOT NULL,
-    password VARCHAR(255) NOT NULL,
-    email VARCHAR(255) UNIQUE NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+use pokemon;
+
+CREATE TABLE IF NOT EXISTS pokemon
+(
+    name    varchar(250) null,
+    id      int auto_increment
+        primary key,
+    type    varchar(250) null,
+    height  float        null,
+    weight  float        null,
+    hp      int          null,
+    attack  int          null,
+    defense int          null,
 );
 
-CREATE TABLE IF NOT EXISTS orders (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    user_id INT NOT NULL,
-    product_name VARCHAR(255) NOT NULL,
-    amount INT NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
-);
-
-INSERT INTO users (username, password, email) 
-VALUES 
-    ('John Doe', '1234', 'john.doe@example.com'),
-    ('Jane Smith', 'abcd', 'jane.smith@example.com'),
-    ('Alice Brown', 'password', 'alice.brown@example.com');
-
-INSERT INTO orders (user_id, product_name, amount) 
-VALUES 
-    (1, 'Laptop', 1),
-    (1, 'Mouse', 2),
-    (2, 'Keyboard', 1),
-    (3, 'Monitor', 1);
+INSERT INTO pokemon.pokemon (name, id, type, height, weight, hp, attack, defense) VALUES ('bulbasaur', 1, 'grass', 7, 69, 45, 49, 49);
+INSERT INTO pokemon.pokemon (name, id, type, height, weight, hp, attack, defense) VALUES ('Pikachu', 22, 'Electric', 0.4, 6, 35, 55, 40);
+INSERT INTO pokemon.pokemon (name, id, type, height, weight, hp, attack, defense) VALUES ('Charizard', 23, 'Fire/Flying', 1.7, 90.5, 78, 84, 78);
+INSERT INTO pokemon.pokemon (name, id, type, height, weight, hp, attack, defense) VALUES ('Squirtle', 25, 'Water', 0.5, 9, 44, 48, 65);
+INSERT INTO pokemon.pokemon (name, id, type, height, weight, hp, attack, defense) VALUES ('Jigglypuff', 26, 'Normal/Fairy', 0.5, 5.5, 115, 45, 20);
