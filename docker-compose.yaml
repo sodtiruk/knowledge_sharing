@@ -5,7 +5,7 @@ services:
     container_name: my-mysql
     environment:
       MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: pokemon 
+      MYSQL_DATABASE: pokemon_world
     ports:
       - "3306:3306"
     volumes:
