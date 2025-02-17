@@ -2,14 +2,14 @@ USE pokemon_world;
 
 CREATE TABLE IF NOT EXISTS pokemon
 (
-    pokemon_id   INT AUTO_INCREMENT PRIMARY KEY,
-    fullname     VARCHAR(250) NULL,
-    pokemon_type VARCHAR(250) NULL,
-    height       FLOAT NULL,
-    mass         FLOAT NULL,
-    hp           INT NULL,
-    attack       INT NULL,
-    defense      INT NULL
+    "id"           INT AUTO_INCREMENT PRIMARY KEY,
+    "name"         VARCHAR(250) NULL,
+    "type"         VARCHAR(250) NULL,
+    "height"       FLOAT NULL,
+    "mass"         FLOAT NULL,
+    "hp"           INT NULL,
+    "attack"       INT NULL,
+    "defense"      INT NULL
 );
 
 INSERT INTO pokemon (fullname, pokemon_type, height, mass, hp, attack, defense) 
