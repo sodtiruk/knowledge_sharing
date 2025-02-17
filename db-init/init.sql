@@ -2,11 +2,11 @@ use pokemon_world;
 
 CREATE TABLE IF NOT EXISTS pokemon
 (
-    p_id        INT AUTO_INCREMENT PRIMARY KEY,
-    p_name      VARCHAR(250) NULL,
-    p_type      VARCHAR(250) NULL,
+    p_id          INT AUTO_INCREMENT PRIMARY KEY,
+    p_name        VARCHAR(250) NULL,
+    p_type        VARCHAR(250) NULL,
     p_height      FLOAT NULL,
-    p_weight    FLOAT NULL,
+    p_weight      FLOAT NULL,
     p_hp          INT NULL,
     p_attack      INT NULL,
     p_defense     INT NULL
