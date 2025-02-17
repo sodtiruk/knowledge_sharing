@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS pokemon
 (
     id           INT AUTO_INCREMENT PRIMARY KEY,
     name         VARCHAR(250) NULL,
-    type         VARCHAR(250) NULL,
+    element      VARCHAR(250) NULL,
     height       FLOAT NULL,
     weight       FLOAT NULL,
     hp           INT NULL,
@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS pokemon
     defense      INT NULL
 );
 
-INSERT INTO pokemon (name, type, height, weight, hp, attack, defense)
+INSERT INTO pokemon (name, element, height, weight, hp, attack, defense)
 VALUES
     ('bulbasaur', 'grass', 7, 69, 45, 49, 49),
     ('Pikachu', 'Electric', 0.4, 6, 35, 55, 40),
