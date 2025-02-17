@@ -2,17 +2,17 @@ use pokemon_world;
 
 CREATE TABLE IF NOT EXISTS pokemon
 (
-    p_id           INT AUTO_INCREMENT PRIMARY KEY,
-    p_name         VARCHAR(250) NULL,
+    p_id        INT AUTO_INCREMENT PRIMARY KEY,
+    p_name      VARCHAR(250) NULL,
     p_type      VARCHAR(250) NULL,
-    height       FLOAT NULL,
-    p_weight       FLOAT NULL,
-    hp           INT NULL,
-    attack       INT NULL,
-    defense      INT NULL
+    height      FLOAT NULL,
+    p_weight    FLOAT NULL,
+    hp          INT NULL,
+    attack      INT NULL,
+    defense     INT NULL
 );
 
-INSERT INTO pokemon (name, element, height, weight, hp, attack, defense)
+INSERT INTO pokemon (p_name, p_type, height, p_weight, hp, attack, defense)
 VALUES
     ('bulbasaur', 'grass', 7, 69, 45, 49, 49),
     ('Pikachu', 'Electric', 0.4, 6, 35, 55, 40),
