@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS pokemon
     "name"         VARCHAR(250) NULL,
     "type"         VARCHAR(250) NULL,
     "height"       FLOAT NULL,
-    "weight"         FLOAT NULL,
+    "weight"       FLOAT NULL,
     "hp"           INT NULL,
     "attack"       INT NULL,
     "defense"      INT NULL
