@@ -6,13 +6,13 @@ CREATE TABLE IF NOT EXISTS pokemon
     "name"         VARCHAR(250) NULL,
     "type"         VARCHAR(250) NULL,
     "height"       FLOAT NULL,
-    "mass"         FLOAT NULL,
+    "weight"         FLOAT NULL,
     "hp"           INT NULL,
     "attack"       INT NULL,
     "defense"      INT NULL
 );
 
-INSERT INTO pokemon (fullname, pokemon_type, height, mass, hp, attack, defense) 
+INSERT INTO pokemon (name, type, height, weight, hp, attack, defense) 
 VALUES 
     ('bulbasaur', 'grass', 7, 69, 45, 49, 49),
     ('Pikachu', 'Electric', 0.4, 6, 35, 55, 40),
